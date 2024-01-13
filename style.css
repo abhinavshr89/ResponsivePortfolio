@@ -232,84 +232,83 @@ button{
     background-color: rgb(0, 0, 0);
 }
 /* .------------------------Media queries for tablet------------------ */
-@media  (max-width: 1024px){
-
+@media (max-width: 1024px)  {
+    :root{
+        --spacing-unit :10px;
+    }
     #intro{
-        padding-left: 15px;
-       
+        margin-left:var(--spacing-unit) ;
+         
     }
-    #intro-para{
-        padding-left: 15px;
-      
-        width: 80%;
-    }
-    .content{
+    .content {
         height: calc(100% - 60px);
-        flex-direction: column-reverse;   
+        flex-direction: column-reverse;
         height: 130vh;
     }
-   
-    .right{
+    .right {
         display: flex;
         justify-content: center;
         align-items: center;
-    
         width: 100%;
     }
-     .outer-box{
-        width: 50%; */
-       
+    .outer-box {
+        width: 40%;
     }
-    .left h3{
+    .left h3 {
         font-size: 5vmax;
     }
     .left p {
         font-size: 2vmax;
     }
-    button{
+    button {
         font-size: 2vh;
     }
-    .left h3{
+    .left h3 {
         font-size: 4vw;
-    
         display: flex;
         flex-direction: column;
     }
-    .
 }
-@media (max-width:660px) {
-    .content{
-        height: 100vh;
-    }
-    .nav{
-        height: 60px;
-    }
-    .left{
-        width: 100%;
+
+@media (max-width: 660px) {
+    :root{
+        --spacing-unit :-5px;
     }
     #intro{
+        margin-left:var(--spacing-unit) ;
+        /* background-color: red */
+    }
+    .content {
+        height: 100vh;
+    }
+    .nav {
+        height: 60px;
+    }
+    .left {
+        width: 100%;
+    }
+    #intro {
         padding-left: 20px;
     }
-    #intro-para{
+    #intro-para {
         padding-left: 15px;
-      
         width: 80%;
     }
-     .card{
-        
-    padding: 10px 35px 10px 0;
-     
-    } 
- 
-    .container{
+    .card {
+        padding: 10px 35px 10px 0;
+    }
+    .container {
         height: 80%;
     }
-    .right{
-      
-        height: 50rem;
+    .right {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        flex-direction: column-reverse;
     }
-    .outer-box{
-        height:70% ;
+    .outer-box {
+        height: 70%;
     }
 }
 
