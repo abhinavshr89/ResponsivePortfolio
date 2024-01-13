@@ -38,8 +38,8 @@ html,body{
     font-weight: bold;
 }
 
-.nav h4 {
-    font-size: 1vw;
+.nav h3 {
+    font-size: ;
 }
 .ri-menu-line{
     display: none;
@@ -92,16 +92,38 @@ button{
     height: 100%;
    
 }
+.right{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+.outer-box{
+  width: 60%;
+  height: 60%;
+  border: 2px solid black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.inner-box{
+    width: 90%;
+    height: 90%;
+    border: 2px solid black;
+}
 @media (max-width:600px){
     .nav{
   
 
        height: 60px;
     }
+    #logo{
+        font-size: 3vh;
+    }
     .nav h2{
         font-size: 3vmax;
     }
-    .nav h4{
+    .nav h3{
         display: none;
     }
     .ri-menu-line{
