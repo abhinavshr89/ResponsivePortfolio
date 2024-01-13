@@ -32,8 +32,17 @@ html,body{
     padding: 0 4vw;
 }
 /* ----------------------navbar logo--------------- */
-/* === removing default button style ===*/
+.logo{
+    border: 2px solid black;
+    border-radius: 15px;
+    transition: all 0.5s linear;
 
+}
+.logo:hover{
+    background-color: black;
+    color: white;
+    box-shadow: 10px 10px 25px rgb(58, 57, 57);
+}
 .logo{
     font-size: 3vmax;
 }
@@ -260,6 +269,9 @@ button{
     .
 }
 @media (max-width:660px) {
+    .content{
+        height: 100vh;
+    }
     .nav{
         height: 60px;
     }
@@ -271,27 +283,15 @@ button{
     }
     #intro-para{
         padding-left: 15px;
-        /* border: 2px solid white; */
+      
         width: 80%;
     }
-    /* .logo{
-        border: 2px solid red;
-        width: 100px;
-    } */
-    .button {
-        --border-right: 6px;
-      --text-stroke-color: rgba(255,255,255,0.6);
-      --animation-color: #37FF8B;
-        --fs-size: 2em;
-        letter-spacing: 3px;
-        text-decoration: none;
-        font-size: var(--fs-size);
-        font-family: "Arial";
-        position: relative;
-        /* text-transform: uppercase; */
-        color: transparent;
-        -webkit-text-stroke: 1px var(--text-stroke-color);
-      }
+     .card{
+        width: 70%px;
+        padding:15px 15px 15px 0;
+     
+    } 
+ 
     .container{
         height: 80%;
     }
@@ -304,7 +304,7 @@ button{
     }
 }
 
-/* git button */
+/* Social links---------------- */
 
 .card {
     display: flex;
