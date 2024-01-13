@@ -26,14 +26,62 @@ html,body{
     justify-content: space-between;
     height: 100px;
     width: 100%;
+    /* background-color: black; */
     border-bottom: 2px solid #dadada;
     align-items: center;
     padding: 0 4vw;
 }
 /* ----------------------navbar logo--------------- */
-.nav h1{
-    font-size: 4vw;
+/* === removing default button style ===*/
+
+.logo{
+    border: 2px solid black;
+    background-color: black;
+    border-radius: 10px;
 }
+.button {
+    
+    margin: 0;
+    height: auto;
+    background: transparent;
+    padding: 0;
+    border: none;
+    cursor: pointer;
+  }
+  
+  /* button styling */
+  .button {
+    --border-right: 6px;
+  --text-stroke-color: rgba(255,255,255,0.6);
+  --animation-color: #37FF8B;
+    --fs-size: 3em;
+    letter-spacing: 3px;
+    text-decoration: none;
+    font-size: var(--fs-size);
+    font-family: "Arial";
+    position: relative;
+    /* text-transform: uppercase; */
+    color: transparent;
+    -webkit-text-stroke: 1px var(--text-stroke-color);
+  }
+  /* this is the text, when you hover on button */
+  .hover-text {
+    position: absolute;
+    box-sizing: border-box;
+    content: attr(data-text);
+    color: var(--animation-color);
+    width: 0%;
+    inset: 0;
+    border-right: var(--border-right) solid var(--animation-color);
+    overflow: hidden;
+    transition: 0.5s;
+    -webkit-text-stroke: 1px var(--animation-color);
+  }
+  /* hover */
+  .button:hover .hover-text {
+    width: 100%;
+    filter: drop-shadow(0 0 23px var(--animation-color))
+  }
 
 /* ----------------------Nav bar part 2 ( right side of the nav bar )------------------------ */
 .nav-part2{
@@ -79,7 +127,7 @@ html,body{
 .mobile-nav-icon{
     width: 4rem;
     height: 4rem;
-    color: black;
+    color: blue;
     
 }
 .mobile-navbar-btn{
@@ -89,6 +137,7 @@ html,body{
 }
 .mobile-nav-icon[name="close-outline"]{
     display: none;
+    color: blue;
 }
 /* .------------------------Responsive code for navbar mobile version ------------------ */
 @media (max-width:62em) {
@@ -144,6 +193,7 @@ html,body{
    }
 }  
 
+
 /* .------------------------Content ------------------ */
 .content{
     display: grid;
@@ -157,18 +207,12 @@ html,body{
     width: 50%;
     padding: 5vw 4vw;
 }
-.right{
-    height: 100%;
-    width: 50%;
-
-    
-}
 .left h3{
     font-size: 4vw;
+    display: flex;
+    flex-direction: column;
 }
-.left h3 span{
-    color:#FF735C;
-}
+
 .left p {
     font-size: 1.2vw;
     width: 80%;
@@ -176,9 +220,11 @@ html,body{
     color: #666;
     margin-top: 3vw;
     margin-bottom: 4vw;
-
+    
 }
-
+.left h2{
+    font-size: 3vw;
+}
 button{
     font-size: 1.5vw;
     padding: 1vw 2vw;
@@ -187,25 +233,29 @@ button{
     color: white;
     border: none;
 }
-
 .right{
+    height: 100%;
+    width: 50%;
     display: flex;
     justify-content: center;
     align-items: center;
 }
+
+
 .outer-box{
   width: 90%;
   height: 90%;
   border-radius: 20px;
  
-  /* border: 2px solid black; */
   display: flex;
   justify-content: center;
   box-shadow: 10px 10px 10px rgb(97, 94, 94);
   align-items: center;
   background: linear-gradient(45deg, #ff00ff, #00ffff, #ff00ff);
-
+  transition: all 2s ease-in-out;
 }
+
+
 .inner-box{
     width: 90%;
     height: 90%;
@@ -213,7 +263,7 @@ button{
 
     background-color: white;
 }
-/* .------------------------Media queries ------------------ */
+/* .------------------------Media queries for tablet------------------ */
 @media (max-width:1024px){
 
     
@@ -243,6 +293,13 @@ button{
     button{
         font-size: 2vh;
     }
+    .left h3{
+        font-size: 4vw;
+    
+        display: flex;
+        flex-direction: column;
+    }
+    .
 }
 @media (max-width:660px) {
     .nav{
@@ -259,3 +316,6 @@ button{
         height:70% ;
     }
 }
+
+
+
