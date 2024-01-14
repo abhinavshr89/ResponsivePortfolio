@@ -305,13 +305,60 @@ button{
         justify-content: center;
         align-items: center;
         width: 100%;
+       
         flex-direction: column-reverse;
     }
     .outer-box {
         height: 70%;
+        border: 10px solid red;
+        width: 50%;
     }
 }
 
+@media (max-width: 450px) {
+    :root{
+        --spacing-unit :-5px;
+    }
+    #intro{
+        margin-left:var(--spacing-unit) ;
+        /* background-color: red */
+    }
+    .content {
+        height: 100vh;
+    }
+    .nav {
+        height: 60px;
+    }
+    .left {
+        width: 100%;
+    }
+    #intro {
+        padding-left: 20px;
+    }
+    #intro-para {
+        padding-left: 15px;
+        width: 80%;
+    }
+    .card {
+        padding: 10px 35px 10px 0;
+    }
+    .container {
+        height: 80%;
+    }
+    .right {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+       
+        flex-direction: column-reverse;
+    }
+    .outer-box {
+        height: 70%;
+        border: 10px solid red;
+        width: 80%;
+    }
+}
 /* Social links---------------- */
 
 .card {
