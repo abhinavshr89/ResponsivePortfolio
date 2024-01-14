@@ -316,9 +316,7 @@ button {
   :root {
     --spacing-unit: -5px;
   }
-  /* .skills-heading h1{
-    font-size: 2rem;
-  } */
+
   #intro {
     margin-left: var(--spacing-unit);
   }
@@ -544,7 +542,10 @@ button {
 .skill-image img{
   width: 80%;
   height: 80%;
-
+  transition: all 0.7s ease-in-out;
+}
+.skill-image img:hover{
+    transform: scale(1.1);
 }
 .skill-about{
  
@@ -562,13 +563,14 @@ button {
     padding: 5px;
     transition: all 0.7s ease-in-out;
 }
-.skill-about:hover{
+/* .skill-about:hover{
     transform: scale(1.1);
     box-shadow: 10px 10px 10px rgb(122, 102, 102);
-}
+} */
 @media (max-width:1024px) {
     .box{
         flex-direction: column;
+        height: 80%;
     }
     .skill-about{
         width: 80%;
@@ -584,6 +586,7 @@ button {
 @media (max-width:600px) {
     .box {
         flex-direction: column;
+        height:80% ;
     }
     .skills {
         display: grid;
