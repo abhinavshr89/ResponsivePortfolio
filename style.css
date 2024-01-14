@@ -320,7 +320,7 @@ button {
     margin-left: var(--spacing-unit);
   }
   .content {
-    height: calc(100% -60px);
+    height: calc(100% - 60px);
   }
   .nav {
     height: 60px;
