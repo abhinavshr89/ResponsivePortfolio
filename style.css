@@ -310,7 +310,7 @@ button{
     }
     .outer-box {
         height: 70%;
-        border: 10px solid red;
+      
         width: 50%;
     }
 }
@@ -321,7 +321,7 @@ button{
     }
     #intro{
         margin-left:var(--spacing-unit) ;
-        /* background-color: red */
+      
     }
     .content {
         height: 100vh;
@@ -355,8 +355,8 @@ button{
     }
     .outer-box {
         height: 70%;
-        border: 10px solid red;
-        width: 80%;
+     
+        width: 65%;
     }
 }
 /* Social links---------------- */
