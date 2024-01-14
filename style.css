@@ -307,11 +307,8 @@ button {
   }
   .outer-box {
     height: 70%;
-    border-radius: 300px;
+
     width: 50%;
-  }
-  .inner-box{
-    border-radius: 1000px;
   }
 }
 
@@ -354,12 +351,9 @@ button {
     flex-direction: column-reverse;
   }
   .outer-box {
-    height: 60%;
-    border-radius: 300px;
+    height: 70%;
+
     width: 65%;
-  }
-  .inner-box{
-    border-radius:300px;
   }
 }
 /* Social links---------------- */
@@ -552,6 +546,7 @@ button {
 }
 .skill-image img:hover{
     transform: scale(1.1);
+
 }
 .skill-about{
  
