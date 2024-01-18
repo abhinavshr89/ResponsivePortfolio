@@ -655,6 +655,13 @@ background-color: var(--primary);
     .main2{
       padding: 0;
     }
+    .skill-bar{
+      width: 90%;
+      height: 30px;
+      background-color:#e9e9ea;
+      border-radius: 20px;
+      box-shadow: var(--shadow);
+    }
 }
 @media (max-width:600px) {
     .box {
@@ -775,9 +782,13 @@ background-color: var(--primary);
   padding: 20px;
 }
 .contact-left{
-
+  height: auto;
   padding: 20px;
- 
+box-shadow: var(--shadow);
+ display:flex;
+ justify-content:space-between;
+ flex-direction: column;
+ align-items:center;
 }
 .contact-image img{
   
@@ -859,16 +870,30 @@ padding: 10px;
 .contact-links img{
   
   filter: drop-shadow(none);
-  height: 100px;
+  max-height: 70px;
   
 }
 @media (max-width: 650px) {
   .contact-left {
     display: none;
   }
-
+  .contact-right{
+   
+  }
+  .contact-me{
+   
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 30px;
+  }
+  .contact-me h3{
+   
+  }
   .contact-container {
     display: grid;
+    font-size: 12px;
     grid-template-columns: 1fr;
     width: 100%;
   }
