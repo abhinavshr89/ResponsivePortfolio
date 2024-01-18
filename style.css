@@ -95,7 +95,7 @@ body {
 .mobile-nav-icon {
   width: 4rem;
   height: 4rem;
-  color: blue;
+  color: var(--secondary);
 }
 .mobile-navbar-btn {
   display: none;
@@ -104,14 +104,14 @@ body {
 }
 .mobile-nav-icon[name="close-outline"] {
   display: none;
-  color: blue;
+  color: var(--secondary);
 }
 /* .------------------------Responsive code for navbar mobile version ------------------ */
 @media (max-width: 62em) {
   .mobile-navbar-btn {
     display: block;
     z-index: 999;
-    border: 3px solid black;
+    
   }
   .nav {
     position: relative;
